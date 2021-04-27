@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Music app</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="shortcut icon" href="#">
+        <link rel="stylesheet" href="./font/font-awesome-4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="app">
+            <div class="dashboard">
+                <header class="dashboard__header">
+                    <h4>Now playing:</h4>
+                    <h2>Sting 57th & 9th</h2>
+                </header>
+
+                <div class="cd">
+                    <div class="cd-thumb" style="background-image: url('https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg')">
+                    </div>
+                </div>
+
+                <div class="dashboard__control">
+                    <div class="btn btn-repeat">
+                        <i class="fa fa-repeat" aria-hidden="true"></i>
+                    </div>
+                    <div class="btn btn-backward">
+                        <i class="fa fa-step-backward" aria-hidden="true"></i>
+                    </div>
+                    <div class="btn btn-play">
+                        <i class="fa fa-play icon--playing" aria-hidden="true"></i>
+                        <i class="fa fa-pause icon--pause" aria-hidden="true"></i>
+                    </div>
+                    <div class="btn btn-forward">
+                        <i class="fa fa-step-forward" aria-hidden="true"></i>
+                    </div>
+                    <div class="btn btn-random">
+                        <i class="fa fa-random" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+                <audio id="audio" src=""></audio>
+            </div>
+
+            <div class="playlist">
+                
+            </div>
+        </div>
+        <script src="./main.js"></script>
+    </body>
+</html>
